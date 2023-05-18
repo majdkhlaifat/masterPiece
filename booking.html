@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="imgs/LogoMakr-0qlole.png" alt="Logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="portal.html">Patient Portal</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="telemedicine.html">Telemedicine Services</a></li>
+            <li><a href="nutrition.html">Food and Nutrition</a></li>
+            <li><a href="fitness.html">Fitness and Exercise</a></li>
+            <li><a href="#">Log out</a></li>
+
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="left">
+            <h2>Book You Appointment Now and Save your time</h2>
+            <p>Choose your prefered date and time and you will recieved a confirm message</p>
+            <p>For Help Call : +189-123-453</p>
+        </div>
+        <div class="right">
+            <div class="form">
+                <h1>Book Appointment</h1>
+
+            <form action="appointment.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder=" Your full name">
+        
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder=" example@email.com">
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder=" Your phone number">
+        
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date">
+        
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time">
+        
+                <label for="message">Additional Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="  Enter your message here"></textarea>
+        
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
